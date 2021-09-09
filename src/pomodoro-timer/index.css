@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #1E9488;
+    font-size: 3em;
+    margin: 20px;
+}
+.container,
+.button-container,
+.timer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #E4FCF7;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.timer,
+button {
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+.timer {
+    height: 11em;
+    width: 12em;
+    background-color: #FB934A;
+    align-items: center;
+    padding: 30px;
+}
+
+.timer p {
+    font-size: 100px;
+    color: #115E59;
+}
+
+button {
+    color: #1E9488;
+    background: #FFF7ED;
+    font-size: 1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.4em 1em;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #fffbf6;
+}
+
+#audio {
+    display: none;
+}
+
+#current-status {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #115E59;
+}
+
+#reset-btn {
+    background-color: #FAA0A0;
+    margin-top: 20px;
+}
