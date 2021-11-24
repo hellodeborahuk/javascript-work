@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <main>
+      <h1>This is my amazing site woo!</h1>
+      <p>Click the cog to change the screensaver time</p>
+      <p>It says mins but it's actually seconds. Who's got time for that?!</p>
+      <p>Close the settings to see the screensaver</p>
+      <p>Don't move your mouse</p>
+      <i id="myBtn" class="fas fa-cog cog"></i>
+      <div id="myModal" class="modal">
+        <div id="modal-settings">
+          <span class="close">&times;</span>
+          <p>Change screensaver time</p>
+          <div class="setting-btns">
+            <button id="increment-btn" onclick="sub()">-</button>
+            <p><span id="count-el">3</span> mins</p>
+            <button id="increment-btn" onclick="add()">+</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="screensaver" class="screensaver">
+      <div id="orb" class="orb"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

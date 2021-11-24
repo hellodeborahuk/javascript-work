@@ -1,0 +1,152 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 2em;
+}
+
+.screensaver {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: absolute;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+
+.orb {
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  background: #c7b9ff;
+  background: linear-gradient(
+    -45deg,
+    #aad1b6,
+    #b5caf9,
+    #c7b9ff,
+    #f0b9dd,
+    #f3bf99,
+    #fffad1
+  );
+  background-size: 300% 1500%;
+  animation: moveGradient 10s ease-in-out infinite;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 10% 0%;
+  }
+  50% {
+    background-position: 91% 100%;
+  }
+  100% {
+    background-position: 10% 0%;
+  }
+  0%,
+  100% {
+    border-radius: 66% 34% 37% 63% / 57% 31% 69% 43%;
+  }
+  50% {
+    border-radius: 26% 74% 51% 49% / 22% 53% 47% 78%;
+  }
+}
+
+#setting-icon {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+}
+
+.count {
+  color: white;
+}
+
+.cog {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 1em;
+  font-size: 2rem;
+  color: #c7b9ff;
+}
+
+.cog:hover {
+  cursor: pointer;
+  color: #f0b9dd;
+}
+
+#myModal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#modal-settings {
+  background-color: #f4f3f8;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #c7b9ff;
+  border-radius: 4px;
+}
+
+.setting-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button {
+  background-color: #c7b9ff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  margin: 1em;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    -45deg,
+    #aad1b6,
+    #b5caf9,
+    #c7b9ff,
+    #f0b9dd,
+    #f3bf99,
+    #fffad1
+  );
+}
