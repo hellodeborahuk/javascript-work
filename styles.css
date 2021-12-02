@@ -1,9 +1,8 @@
-h1 {
-    color: blue; 
-}
 
 body {
     background: #EAFDF9;
+    color: #115E59; 
+    padding: 4em;
 }
 
 :root {
